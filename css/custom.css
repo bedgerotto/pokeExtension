@@ -1,20 +1,168 @@
 /**
  * Chrome Extension Twitter Bootstrap 3 Template
  * Custom CSS
- *	
+ *
  */
 
-body, section {			/* Change width and height to own preferences */
-	width: 500px;
+body {			/* Change width and height to own preferences */
+	width: 400px;
 	height: 400px;
-	overflow-x: hidden;
+	overflow: hidden;
+	background: linear-gradient(#4CA1AF, #C4E0E5);
+	background-repeat: no-repeat;
+	background-size:cover;
+	margin: 0;
+	/*background: lightgray;*/
 }
 
-/* Basic style tweaks */
-section { padding: 5px;}
-.navbar { margin-bottom: 2px; }
+.container {
+	width: 400px;
+	height: 400px;
+	overflow: hidden;
+	background-image: url('../img/grassBorder.png');
+	background-repeat: repeat-x;
+	background-position:bottom;
+	background-size:400px;
+}
 
-/* Scroll Bar */
-::-webkit-scrollbar { width: 6px; }
-::-webkit-scrollbar-track { -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); }
-::-webkit-scrollbar-thumb, ::-webkit-scrollbar-thumb:window-inactive  { background: red; }
+.slider {
+	width: 800px;
+	height: 400px;
+}
+
+#divLeft, #divRight {
+	padding: 8px;
+	width: 400px;
+	height: 400px;
+	float: left;
+}
+
+ul{
+	text-transform: capitalize;
+}
+
+h4{
+	margin: 0;
+	text-transform: capitalize;
+	font: 15px helvetica;
+}
+
+#div-poke{
+	width: 55%;
+	padding: 15px;
+	float:left;
+}
+
+#image{
+	width: 35%;
+	float:left;
+}
+
+#poke-icon{
+	width: 100%;
+}
+
+#btn-back, #btn-poke{
+	padding: 7.5px 7.5px;
+	text-align: center;
+	text-decoration: none;
+	background: #E84946;
+	border: none;
+	color: white;
+	display: inline-block;
+	font-size: 18px;
+	border-radius: 8px;
+	transition-duration: 0.1s;
+	float: none;
+	margin: 6px;
+	outline-width: 0;
+}
+#btn-back:hover, #btn-poke:hover{
+	background-color: #f26a65;
+	box-shadow: 0 1.5px 1.5px 0 rgba(0,0,0,0.24), 0 1.5px 1.5px 0 rgba(0,0,0,0.19);
+}
+#btn-back:active, #btn-poke:active{
+	background-color: #c42c2b;
+}
+
+input{
+	float:left;
+	font-size: 18px;
+	border-radius: 8px;
+	text-decoration: none;
+	color:black;
+	-webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  padding: 7px;
+  margin: 5px 1px 3px 0px;
+	width: 70%;
+	box-shadow: 0 0 2.5px rgba(0, 0, 0, 0.3);
+	border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+input:focus{
+	box-shadow: 0 0 2.5px rgb(61, 175, 210);
+  padding: 7px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid rgb(61, 175, 210);
+}
+
+h3{
+	font: 20px helvetica;
+}
+
+.header{
+	width: 97%;
+}
+
+.header-content{
+	width: 80%;
+	float:left;
+}
+
+.header-btn{
+	margin: 5px 15px;
+	width: 20%;
+	float: right;
+}
+
+.loading {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.5);
+    background-image: url("../img/loading.gif");
+		background-size: 160px 120px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.textLoading{
+	margin: 68% 46%;
+}
+
+.panel{
+	width: 90%;
+	border: 1px gray solid;
+	border-radius: 8px;
+	padding: 0 5px;
+	float: left;
+	background: whitesmoke;
+}
+
+.panel p{
+	font: 17px helvetica;
+	color: #3c3c3c;
+	text-transform: capitalize;
+}
+
+.content{
+	margin-bottom: 10px;
+}

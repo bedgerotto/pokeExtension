@@ -3,6 +3,11 @@
 	"name": "PokeExtension",
 	"description": "Busque pokemons!",
 	"version": "1.0",
+	"icons": {
+		"128" : "img/icon.png",
+		"48" : "img/icon.png",
+		"16" : "img/icon.png"
+	},
 	"permissions": [
 		"storage",
 		"tabs"

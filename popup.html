@@ -9,41 +9,47 @@
 
 		<!-- Scripts -->
 		<script src="js/jquery-2.0.3.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
+
 		<script src="js/popup.js"></script>
 
 		<!-- Cascading Style Sheets -->
-		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+
 		<link href="css/custom.css" rel="stylesheet" media="screen">
 	</head>
 
-	<body class="">
-		<section id="toHide">
-			<div class="">
-					<div class="form-group">
-						<div class="col-10">
-								<input type="text" id="pokemon" class="form-control">
-						</div>
+	<body class="bodyBg">
+		<div class="container">
+			<div class="slider">
+				<div id="divLeft" class="wow slideInLeft">
 						<div class="">
-							<div class="btn btn-danger" id="btn-poke">
-								<i class="glyphicon glyphicon-search"></i></a>
-							</div>
+								<input type="text" id="pokemon" placeholder="Ache seu pokemon!">
+								<button class="" type="button" id="btn-poke">
+									Buscar
+								</button>
 						</div>
+				</div>
+				<div id="divRight">
+					<div class="content">
+						<div class="panel">
+							<div id="div-poke">
 
+							</div>
+							<div id="image">
+								<img src="" alt="Icon" id="poke-icon" width="100" />
+							</div>
 
+						</div>
 					</div>
+					<div class="header-btn">
+						<button class="btn btn-danger" type="button" id="btn-back">Voltar</button>
+					</div>
+				</div>
 			</div>
-			<div class="panel panel-default ">
-					<div class="panel-header">
-						<h4 class="panel-heading">Quem é esse pokemon?</h4>
-					</div>
-					<div class="panel-content">
-						<div id="div-poke">
-
-				    </div>
-					</div>
-			</div>
-
-		</section>
+		</div>
+		<div class="loading">
+				<h4 class="textLoading">
+					Loading...
+				</h4>
+		</div>
 	</body>
 </html>

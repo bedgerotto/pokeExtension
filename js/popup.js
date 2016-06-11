@@ -9,13 +9,14 @@ function getPokeInfo(callback){
         console.debug(pokemon);
         var html = "";
         html += "<h4>Name: "+pokemon.name+"</h4>";
-        html += "<h4>Abilities: </h4>";
+        html += "<h4>Abilities: </h4><br/>";
         var abilities = '<ul>';
         for (i in pokemon.abilities) {
           abilities += '<li>'+pokemon.abilities[i].ability.name+'</li>';
         }
         abilities += '</ul>';
         html += abilities;
+
         html += "<h4>Types: </h4>";
         var types = '<ul>';
         for (i in pokemon.types) {
@@ -23,6 +24,14 @@ function getPokeInfo(callback){
         }
         types += '</ul>';
         html += types;
+
+        html += "<h4>Stats: </h4>";
+        var stats = '<ul>';
+        for (i in pokemon.stats) {
+          stats += '<li>'+pokemon.stats[i].stat.name+': '+pokemon.stats[i].base_stat+'</li>';
+        }
+        stats += '</ul>';
+        html += stats;
 
         $('#div-poke').html(html);
         $('#poke-icon').attr('src', pokemon.sprites.front_default);
@@ -37,7 +46,7 @@ function getPokeInfo(callback){
 
 
 document.addEventListener('DOMContentLoaded', function() {
-  $('.loading').hide();
+    $('.loading').hide();
     $('#btn-poke').on('click', function(){
       $('.loading').show();
       getPokeInfo(function(){

@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
           marginLeft: '-430px'
         }, 600);
         $('.loading').hide();
-        $('#btn-poke').empty();
+        $('#pokemon').empty();
       });
     });
     $('#btn-back').on('click', function(){
